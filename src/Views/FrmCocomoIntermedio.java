@@ -7,6 +7,7 @@ package Views;
 
 import Models.CocomoIntermedio;
 import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 
 /**
@@ -22,6 +23,7 @@ public class FrmCocomoIntermedio extends javax.swing.JFrame {
      */
     public FrmCocomoIntermedio() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("../img/icon.png")).getImage());
         this.setLocationRelativeTo(null);
     }
 

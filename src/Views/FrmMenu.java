@@ -5,6 +5,9 @@
  */
 package Views;
 
+
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author DeVeLoPer24
@@ -16,6 +19,7 @@ public class FrmMenu extends javax.swing.JFrame {
      */
     public FrmMenu() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("../img/icon.png")).getImage());
         this.setLocationRelativeTo(null);
     }
 
@@ -155,10 +159,16 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void btnLineasCodigoLDCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLineasCodigoLDCActionPerformed
         // TODO add your handling code here:
+        FrmLDC frmLDC = new FrmLDC();
+        frmLDC.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnLineasCodigoLDCActionPerformed
 
     private void btnCosmicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCosmicActionPerformed
         // TODO add your handling code here:
+        FrmCosmic frmCosmic = new FrmCosmic();
+        frmCosmic.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnCosmicActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -211,4 +221,7 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
+
+  
+
 }

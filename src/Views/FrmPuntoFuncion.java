@@ -6,6 +6,9 @@
 package Views;
 
 import Models.PuntoFuncion;
+import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
 
 /**
  *
@@ -18,6 +21,7 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
      */
     public FrmPuntoFuncion() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("../img/icon.png")).getImage());
         this.setLocationRelativeTo(null);
     }
 
@@ -125,18 +129,46 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 30));
 
         txtEE.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtEE.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtEEKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtEEKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtEE, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 40, 30));
 
         txtSE.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtSE.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtSEKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtSE, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 40, 30));
 
         txtCE.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtCE.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCEKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtCE, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 40, 30));
 
         txtALI.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtALI.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtALIKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtALI, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, 40, 30));
 
         txtAIE.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtAIE.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAIEKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtAIE, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 40, 30));
 
         cboModelo.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
@@ -200,45 +232,115 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 500, 20));
 
         txtUno.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtUno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtUnoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 10, 40, -1));
 
         txtDos.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtDos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDosKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 40, 40, -1));
 
         txtTres.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtTres.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTresKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 70, 40, -1));
 
         txtCuatro.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtCuatro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCuatroKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtCuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 100, 40, -1));
 
         txtCinco.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtCinco.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCincoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 130, 40, -1));
 
         txtSeis.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtSeis.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtSeisKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtSeis, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 160, 40, -1));
 
         txtSiete.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtSiete.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtSieteKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtSiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 190, 40, -1));
 
         txtOcho.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtOcho.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtOchoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtOcho, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 220, 40, -1));
 
         txtNuevo.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtNuevo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNuevoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 250, 40, -1));
 
         txtDiez.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtDiez.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDiezKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtDiez, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 280, 40, -1));
 
         txtOnce.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtOnce.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtOnceKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtOnce, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 310, 40, -1));
 
         txtDoce.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtDoce.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDoceKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtDoce, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 340, 40, -1));
 
         txtTrece.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtTrece.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTreceKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtTrece, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 370, 40, -1));
 
         txtCatorce.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        txtCatorce.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCatorceKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtCatorce, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 400, 40, -1));
 
         jLabel21.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
@@ -283,6 +385,11 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
         getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, 30));
 
         txtNroDesarrolladores.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        txtNroDesarrolladores.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNroDesarrolladoresKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtNroDesarrolladores, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 40, 30));
 
         jLabel26.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
@@ -354,9 +461,9 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
         int peticiones = Integer.parseInt(txtCE.getText());
         int archivos = Integer.parseInt(txtALI.getText());
         int interfaces = Integer.parseInt(txtAIE.getText());
-        
+
         pf.CuentaTotal(entrada, salida, peticiones, archivos, interfaces, parametro);
-        
+
         int preguntas[];
         preguntas = new int[14];
         preguntas[0] = Integer.parseInt(txtUno.getText());
@@ -373,27 +480,131 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
         preguntas[11] = Integer.parseInt(txtDoce.getText());
         preguntas[12] = Integer.parseInt(txtTrece.getText());
         preguntas[13] = Integer.parseInt(txtCatorce.getText());
-        
+
         pf.SumatoriaFi(preguntas);
-        
+
         double puntoFuncion = pf.PuntoFuncion();
-        
+
         txtPuntofuncion.setText(Math.round(puntoFuncion * 100.0) / 100.0 + "");
-        
+
         double personaMes = pf.PersonaMes();
-        
+
         txtPersonames.setText(Math.round(personaMes * 100.0) / 100.0 + "");
-        
+
         double esfuerzo = pf.Esfuerzo();
-        
+
         txtEsfuerzo.setText(Math.round(esfuerzo * 100.0) / 100.0 + "");
-        
+
         int desarrolladores = Integer.parseInt(txtNroDesarrolladores.getText());
-        
+
         double duracionTiempo = pf.DuracionTiempo(desarrolladores);
-        
+
         txtDuracionTiempo.setText(Math.round(duracionTiempo * 100.0) / 100.0 + "");
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void txtEEKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEEKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEEKeyPressed
+
+    private void txtEEKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEEKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtEEKeyTyped
+
+    private void txtSEKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSEKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtSEKeyTyped
+
+    private void txtCEKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCEKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtCEKeyTyped
+
+    private void txtALIKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtALIKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtALIKeyTyped
+
+    private void txtAIEKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAIEKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtAIEKeyTyped
+
+    private void txtNroDesarrolladoresKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNroDesarrolladoresKeyTyped
+        // TODO add your handling code here:
+        numberKeyPress(evt);
+    }//GEN-LAST:event_txtNroDesarrolladoresKeyTyped
+
+    private void txtUnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUnoKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtUno);
+    }//GEN-LAST:event_txtUnoKeyTyped
+
+    private void txtDosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDosKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtDos);
+    }//GEN-LAST:event_txtDosKeyTyped
+
+    private void txtTresKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTresKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtTres);
+    }//GEN-LAST:event_txtTresKeyTyped
+
+    private void txtCuatroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCuatroKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtCuatro);
+    }//GEN-LAST:event_txtCuatroKeyTyped
+
+    private void txtCincoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCincoKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtCinco);
+    }//GEN-LAST:event_txtCincoKeyTyped
+
+    private void txtSeisKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSeisKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtSeis);
+    }//GEN-LAST:event_txtSeisKeyTyped
+
+    private void txtSieteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSieteKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtSiete);
+    }//GEN-LAST:event_txtSieteKeyTyped
+
+    private void txtOchoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtOchoKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtOcho);
+    }//GEN-LAST:event_txtOchoKeyTyped
+
+    private void txtNuevoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNuevoKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtNuevo);
+    }//GEN-LAST:event_txtNuevoKeyTyped
+
+    private void txtDiezKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDiezKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtDiez);
+    }//GEN-LAST:event_txtDiezKeyTyped
+
+    private void txtOnceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtOnceKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtOnce);
+    }//GEN-LAST:event_txtOnceKeyTyped
+
+    private void txtDoceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDoceKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtDoce);
+    }//GEN-LAST:event_txtDoceKeyTyped
+
+    private void txtTreceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTreceKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtTrece);
+    }//GEN-LAST:event_txtTreceKeyTyped
+
+    private void txtCatorceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCatorceKeyTyped
+        // TODO add your handling code here:
+        numberKeyPressUnoCinco(evt,txtCatorce);
+    }//GEN-LAST:event_txtCatorceKeyTyped
 
     /**
      * @param args the command line arguments
@@ -489,4 +700,27 @@ public class FrmPuntoFuncion extends javax.swing.JFrame {
     private javax.swing.JTextField txtTres;
     private javax.swing.JTextField txtUno;
     // End of variables declaration//GEN-END:variables
+
+    public void numberKeyPress(KeyEvent evt) {
+        // declaramos una variable y le asignamos un evento
+        char car = evt.getKeyChar();
+        if ((car < '0' || car > '9') && (car != (char) KeyEvent.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+
+    }
+
+    public void numberKeyPressUnoCinco(KeyEvent evt,JTextField textField) {
+        // declaramos una variable y le asignamos un evento
+        char car = evt.getKeyChar();
+        if ((car < '1' || car > '5') && (car != (char) KeyEvent.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+
+        if (textField.getText().length() >= 1) {
+            evt.consume();
+        }
+        
+    }
+
 }

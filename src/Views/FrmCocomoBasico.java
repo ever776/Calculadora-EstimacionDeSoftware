@@ -8,6 +8,7 @@ package Views;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 import Models.CocomoBasico;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -20,6 +21,7 @@ public class FrmCocomoBasico extends javax.swing.JFrame {
      */
     public FrmCocomoBasico() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("../img/icon.png")).getImage());
         this.setLocationRelativeTo(null);
     }
 
@@ -425,4 +427,6 @@ public class FrmCocomoBasico extends javax.swing.JFrame {
             evt.consume();
         }
  }
+ 
+ 
 }

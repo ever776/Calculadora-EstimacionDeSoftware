@@ -37,6 +37,7 @@ public class Main {
         System.out.println("Esfuerzo persona Mes: "+Math.round(epm * 100.0) / 100.0 + "");
         */
         // Punto de Funcion
+        /*
         PuntoFuncion pf = new PuntoFuncion();
         
         System.out.println("cuenta total " + pf.CuentaTotal(3, 2, 2, 1, 4, 0));
@@ -68,6 +69,32 @@ public class Main {
         System.out.println("Calculo esfuerzo " + pf.Esfuerzo());
         
         System.out.println("Duracion Tiempo " + pf.DuracionTiempo(4));
+        */
+        
+        //ldc
+        /*
+        
+        LDC ldc = new LDC(300);
+        System.out.println("esfuerzo: " + ldc.EstimacionEsfuerzo());
+        
+        System.out.println("costo: " + ldc.EstimacionCosto());
+        
+        System.out.println("Productividad: " + ldc.EstimacionProductividad());
+        
+        System.out.println("Cosot de LdC: " + ldc.CostoLDC());
+        */
+        /*
+        Cosmic c = new Cosmic(2407.05,12,5);
+        
+        System.out.println("Costo por pf: " + c.CostoPuntoFuncion());
+        
+        System.out.println("Costo de proyecto de sf: " + c.CostoProyectoSoftware());
+        
+        System.out.println("Duracion de proyecto: " + c.DuracionProyecto());
+        
+        System.out.println("Costara el Software: " + c.CostaraSoftware());
+        */
+        
     }
     
 }
